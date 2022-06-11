@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main>
+    <ul class="boxes">
+        {% if boxes%}
+        {% for  box in boxes  %}
+        <li>
+            <h2> <a href="{% url 'box' box.id %}"> {{box.nome_box}}</a> </h2>
+
+            {% if box.foto_boxes %}
+                <img class="foto_boxes" src="{{ box.foto_boxes.url }}" alt=""> 
+            {% else %}
+                <img class="foto_boxes" src="{% static 'img/example.png' %}" alt="">
+            {% endif %}
+            <p>{{box.nome_box}}</p>
+            <p>{{box.descricao}}</p>
+            
+        </li>   
+        {% endfor %}
+        {% endif %}
+        
+    </ul>
+
+
+    </main> 
+
+{% endblock %}

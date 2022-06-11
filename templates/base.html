@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Página Inicial</title>
+        
+        <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+
+        <link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+    </head>
+<body>
+    <header>
+        <h1><img class="logo" src="{% static 'img/Logo.svg' %}" alt="logo"></h1>
+        <nav>    
+            <ul>
+                <li> <a href="{% url 'home' %}">Inicio</a> </li>
+                <li> <a href="{% url 'blog' %}">Blog</a> </li>
+                <li> <a href="{% url 'eventos' %}">Eventos</a> </li>
+                <li> <a href="{% url 'boxes' %}">Boxes</a> </li>
+                <li> <a href="{% url 'contatos' %}">Contatos</a> </li>
+
+                
+            </ul>
+        </nav>        
+        
+
+
+   </header>
+{% block content %} {% endblock %}
+    <footer>
+        <h3>Titulo qualquer</h3>
+        <p>mensagem de rodapé</p>
+
+    
+
+
+</footer>
+    </body>
+</html>

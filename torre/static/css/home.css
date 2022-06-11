@@ -1,0 +1,161 @@
+header{
+    background: rgb(199, 255, 237);
+}
+
+.logo {
+    width: 20%;
+    position: relative;
+    left: 5%;
+}
+
+nav{
+    position: absolute;
+    top: 20%;
+    right: 7%;
+
+}
+
+nav li{
+    display: inline;    
+    margin: 0 0 0 48px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color:black;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: campaign !important;
+
+}
+
+.boxes{
+    width: auto;
+    margin: 0 auto;
+    padding: 50px 0px;
+    
+}
+
+
+.boxes h2{
+    font-weight: bold;
+    font-size: 25px;
+    font-family: campaign !important;
+
+}
+
+.boxes p{
+
+    font-weight: 10px;
+    font-size: 20px;
+    font-family: campaign !important;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    
+
+}
+
+.boxes li{
+    display: inline-block;
+    text-align: center;
+    width: 29%;
+    vertical-align: top;
+    margin: 0 1%;
+    margin:  30px 30px 30px 15px;
+
+    border: rgb(160, 158, 158) 3px solid;
+    border-radius: 10px;
+}
+
+.foto_boxes{
+    width: 300px;
+
+
+}
+
+
+.teste p { 
+    font-weight: 10px;
+    font-size: 25px;
+    font-family: campaign !important;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    
+}
+
+
+
+
+
+.blog{
+    width: auto;
+    margin: 0 auto;
+    padding: 50px 0px;
+    
+}
+
+
+.blog h2{
+    font-weight: bold;
+    font-size: 25px;
+    font-family: campaign !important;
+
+}
+
+.blog p{
+
+    font-weight: 10px;
+    font-size: 20px;
+    font-family: campaign !important;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    
+
+}
+
+.blog li{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    vertical-align: top;
+    margin: 0 1%;
+    margin:  30px 30px 30px 15px;
+
+    border: rgb(160, 158, 158) 3px solid;
+    border-radius: 10px;
+}
+
+.foto_blog {
+    width: 500px;
+
+
+}
+
+
+
+footer{
+    text-align: center;
+    background: #E4E6C3;
+    padding: 80px;    
+}
+
+
+
+
+
+
+footer h3 {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: campaign !important;
+    text-transform: uppercase;
+
+}
+footer p {
+    font-weight: 10px;
+    font-size: 20px;
+    font-family: campaign !important;
+
+}
+

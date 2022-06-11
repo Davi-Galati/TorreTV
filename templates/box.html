@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<main>
+    
+        
+
+        
+        
+        <ul class="blog">
+            
+            
+
+        
+    
+            <li>
+                <p>{{ box.nome_responsavel }}</p>
+                {% if box.foto_boxes %}
+                        <img class="foto_blog" src="{{ box.foto_boxes.url }}" alt=""> 
+                    {% else %}
+                        <img class="foto_blog" src="{% static 'img/example.png' %}" alt="">
+                    {% endif %}
+                        <p>{{box.nome_box}}</p>       
+
+                        <p>Bloco: {{ box.bloco }}</p>
+                        <p>Numero da loja: {{ box.numero_loja }}</p>
+                        <p>{{ box.descricao }}</p>
+    
+    
+            </li>     
+            
+          
+            
+        </ul>
+
+
+
+
+    
+    <ul class="boxes">
+        {% if produtos%}
+        {% for  produto in produtos  %}
+        <li>
+            <p>{{produto.nome_produto}}</p>
+
+
+            {% if produto.foto_produtos %}
+            <img class="foto_boxes" src="{{ produto.foto_produtos.url }}" alt=""> 
+            {% else %}
+            <img class="foto_boxes" src="{% static 'img/example.png' %}" alt="">
+            {% endif %}
+
+            <p>{{produto.descricao}}</p>
+        </li>   
+        {% endfor %}
+        {% endif %}
+        
+    </ul>
+
+</main> 
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main>
+    <ul class="boxes">
+        {% if produtos%}
+        {% for  produto in produtos  %}
+        <li>
+            <h2> <a href="{% url 'produtos' %}">{{produto.nome_produto}}</a> </h2>
+
+            <img class="foto_boxes"src="{% static 'img/example.png' %}" alt=""> 
+            <p>{{produto.boxe}}</p>
+            <p>{{produto.descricao}}</p>
+            
+        </li>   
+        {% endfor %}
+        {% endif %}
+        
+    </ul>
+
+
+    </main> 
+
+{% endblock %}

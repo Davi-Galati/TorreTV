@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main>
+    <ul class="blog">
+        {% if blogs %}
+        {% for  blog in blogs  %}
+
+        <li>
+            <h2> {{blog.titulo}} </h2>
+                    {% if blog.foto_blog %}
+                    <img class="foto_blog" src="{{ blog.foto_blog.url }}" alt=""> 
+                    {% else %}
+                    <img class="foto_blog" src="{% static 'img/example.png' %}" alt="">
+                    {% endif %}
+                <p>{{ blog.data }}</p>
+                <p>{{ blog.descricao }}</p>
+
+
+        </li>     
+        
+        {% endfor %}
+        {% endif %}
+        
+    </ul>
+
+
+    </main> 
+
+{% endblock %}
