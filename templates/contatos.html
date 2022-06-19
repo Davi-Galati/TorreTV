@@ -1,6 +1,18 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+<main>
+    <div class="teste">
+        {% if contatos %}
+        {% for  contato in contatos  %}
+            <p>Nome: {{contato.nome}}</p>
+            <p>Contato: {{contato.contato}}</p>
+                
+       
+        
+        {% endfor %}
+        {% endif %}
 
+    </main> 
 
 {% endblock %}

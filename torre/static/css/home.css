@@ -74,8 +74,23 @@ nav a{
 
 }
 
+.borda_main_2{
+    margin-left: 11%;
+    position: absolute;
+    width: 1382px;
+    height: 50px;
+    left: 0px;
+    bottom: 20px;
+    background: #e0ebe1;
+ }
+.form{
+    display: flex;
+    flex-direction: column;
+
+}
 
 .teste p { 
+    text-align: center;
     font-weight: 10px;
     font-size: 25px;
     font-family: campaign !important;
@@ -130,6 +145,16 @@ nav a{
     width: 500px;
 
 
+}
+
+
+.contatos p {
+    text-align: center;
+    font-weight: 10px;
+    font-size: 25px;
+    font-family: campaign !important;
+    padding: 10px 10px;
+    box-sizing: border-box;
 }
 
 
